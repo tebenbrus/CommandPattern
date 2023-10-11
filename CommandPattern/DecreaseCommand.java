@@ -4,7 +4,8 @@ class DecreaseCommand implements Command {
         this.device = device;
     }
     @Override
-    public void execute() {
-        device.decrease();
+    public String execute() {
+        return device.decrease();
+
     }
 }

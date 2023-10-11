@@ -1,7 +1,7 @@
 interface Device {
-    void turnOn();
-    void turnOff();
-    boolean increase();
-    void decrease();
-    void playing();
+    String turnOn();
+    String turnOff();
+    String increase();
+    String decrease();
+    String playing();
 }

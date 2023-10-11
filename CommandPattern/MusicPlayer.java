@@ -1,37 +1,40 @@
 import java.util.Scanner;
 
 class MusicPlayer implements Device {
-    private boolean playing = false;
+    private String playing;
     private int volume = 0;
     private String playlist = "Default Playlist";
     @Override
-    public void turnOn() {
+    public String turnOn() {
         System.out.println("Music player is on");
 
-        playing = true;
+
+        return null;
     }
 
     @Override
-    public void turnOff() {
+    public String turnOff() {
         System.out.println("Music player is off");
         System.out.println();
-        playing = false;
+
+        return null;
     }
 
     @Override
-    public boolean increase() {
+    public String increase() {
         volume++;
         System.out.println("Volume increased to " + volume);
         System.out.println();
-        return false;
+        return null;
     }
     @Override
-    public void decrease() {
+    public String decrease() {
         volume--;
         System.out.println("Volume decreased to " + volume);
         System.out.println();
+        return null;
     }
-    public void playing() {
+    public String playing() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Current Playlist: " + playlist);
         System.out.print("Enter a new playlist name (or press Enter to keep the current playlist): ");
@@ -41,5 +44,6 @@ class MusicPlayer implements Device {
             System.out.println("Playlist set to: " + playlist);
         }
         System.out.println();
+        return null;
     }
 }

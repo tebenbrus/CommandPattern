@@ -2,34 +2,38 @@ public class Thermostat implements Device {
     private int temperature = 20; //set as default
 
     @Override
-    public void turnOn() {
+    public String turnOn() {
         System.out.println("Thermostat is on");
         System.out.println();
+        return null;
     }
 
     @Override
-    public void turnOff() {
+    public String turnOff() {
         System.out.println("Thermostat is off");
         System.out.println();
+        return null;
     }
 
     @Override
-    public boolean increase() {
+    public String increase() {
         temperature++;
         System.out.println("Temperature increased to " + temperature + "°C");
         System.out.println();
-        return false;
+        return null;
     }
 
     @Override
-    public void decrease() {
+    public String decrease() {
         temperature--;
         System.out.println("Temperature decreased to " + temperature + "°C");
         System.out.println();
+        return null;
     }
 
     @Override
-    public void playing() {
+    public String playing() {
 
+        return null;
     }
 }

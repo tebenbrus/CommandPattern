@@ -6,8 +6,8 @@ public  class PlayingCommand implements Command{
         this.device = device;
     }
     @Override
-    public void execute() {
-        device.playing();
+    public String execute() {
+        return device.playing();
 
     }
 }

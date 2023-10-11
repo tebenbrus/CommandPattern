@@ -1,3 +1,3 @@
-interface Command {
-    void execute();
+public interface Command {
+    public String execute();
 }

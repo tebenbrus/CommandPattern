@@ -6,10 +6,8 @@ public class IncreaseCommand implements Command {
     }
 
     @Override
-    public void execute() {
-            device.increase();
-
-
+    public String execute() {
+           return device.increase();
 
 
 

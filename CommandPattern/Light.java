@@ -7,34 +7,38 @@ class Light implements Device {
     }
 
     @Override
-    public void turnOn() {
+    public String turnOn() {
         System.out.println(name + " light is on");
         System.out.println();
+        return null;
     }
 
     @Override
-    public void turnOff() {
+    public String turnOff() {
         System.out.println(name + " light is off");
         System.out.println();
+        return null;
     }
 
     @Override
-    public boolean increase() {
+    public String increase() {
         brightnessLevel++;
         System.out.println(name + " light brightness increased to " + brightnessLevel);
         System.out.println();
-        return false;
+        return null;
     }
 
     @Override
-    public void decrease() {
+    public String decrease() {
         brightnessLevel--;
         System.out.println(name + " light brightness decreased to " + brightnessLevel);
         System.out.println();
+        return null;
     }
 
     @Override
-    public void playing() {
+    public String playing() {
 
+        return null;
     }
 }

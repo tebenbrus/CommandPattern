@@ -4,8 +4,9 @@ public TurnOnCommand(Device device) {
         this.device = device;
         }
 @Override
-public void execute() {
-        device.turnOn();
-        }
+public String execute() {
+        return device.turnOn();
+
+}
 }
 

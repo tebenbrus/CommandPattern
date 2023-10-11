@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SmartHomeAutomation extends RemoteControl {
+public class ViewerApp extends RemoteControl {
     public static void main(String[] args) {
 
         String name = "LivingRoom";

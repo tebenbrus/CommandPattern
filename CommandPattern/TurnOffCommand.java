@@ -6,8 +6,9 @@ public class TurnOffCommand implements Command {
     }
 
     @Override
-    public void execute() {
-        device.turnOff();
+    public String execute() {
+       return device.turnOff();
+
     }
 }
 
